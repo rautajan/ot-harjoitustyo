@@ -65,3 +65,4 @@ Date:   Mon Nov 2 15:49:03 2020 +0200
 
  tiedosto.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
+EDITOIDAAN EPÄSYNKROONIIN.
