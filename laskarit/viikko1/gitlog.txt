@@ -1,0 +1,67 @@
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 41ff932324bf0f329e31c8fe6b6f677359f5047d
+Author: Janne <janne.rautava@gmail.com>
+Date:   Mon Nov 2 16:31:50 2020 +0200
+
+    paljon tekstiä muokkaus
+
+ tiedosto.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9a028514951862a07ddc1f80ec6eb348fad8a97f
+Author: Janne <janne.rautava@gmail.com>
+Date:   Mon Nov 2 16:29:30 2020 +0200
+
+    paljon tekstiä
+
+ tiedosto.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f3bfcb005d1e3fc4c17b676a78e9a520e6c6adef
+Author: Janne <janne.rautava@gmail.com>
+Date:   Mon Nov 2 16:11:57 2020 +0200
+
+    kaman lisäys
+
+ stuff/tavaraa.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 558464882a90b26406e8748ca89bafc1ff09dbf0
+Author: Janne <janne.rautava@gmail.com>
+Date:   Mon Nov 2 16:09:03 2020 +0200
+
+    lisäharjoittelua
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 23f535552743a2a2aaab7141e0118c9bae11516f
+Author: Janne <janne.rautava@gmail.com>
+Date:   Mon Nov 2 16:03:13 2020 +0200
+
+    kolmas lisäys
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a1f11e9f4d29e10d52a6ac93b6f8c03b68f24d37
+Author: Janne <janne.rautava@gmail.com>
+Date:   Mon Nov 2 15:57:29 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit e2d1694c6d8f2749962b50ef222799832c97afc6
+Author: Janne <janne.rautava@gmail.com>
+Date:   Mon Nov 2 15:49:03 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
