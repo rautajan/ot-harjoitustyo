@@ -1,5 +1,5 @@
 # Vaatimusmäärittely
---
+
 ## Sovelluksen tarkoitus
 
 Sovelluksen ideana on antaa käyttäjälle harjoitusohjelma kuntosalille
@@ -13,7 +13,7 @@ jolla on laajemmat oikeudet.
 
 ## Perusversion tarjoama toiminnallisuus
 
-## Ennen kirjautumista
+### Ennen kirjautumista
 - Käyttäjä voi luoda oman käyttäjätunnuksen ja salasanan.
 	- Käyttäjätunnuksen tulee olla uniikki ja vähintään neljä merkkiä
 	 pitkä.
@@ -25,7 +25,7 @@ jolla on laajemmat oikeudet.
 	kyseisellä tunnuksella, niin tästä ilmoitetaan myös virheviestillä.
 
 
-## Kirjautumisen jälkeen
+### Kirjautumisen jälkeen
 - Käyttäjä näkee ensimmäisellä kerralla kirjautuessaan näkymän, jossa
 kysytään ikää, sukupuolta, harjoitustaustaa, kuinka paljon on mahdollisuus
 käyttää aikaa harjoitteluun viikossa sekä harjoittelun tavoitteita.
