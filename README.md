@@ -4,3 +4,6 @@ Linkki komentoriville: https://github.com/rautajan/ot-harjoitustyo/blob/master/l
 Linkki gitlogiin: https://github.com/rautajan/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt
 Paikallisessa repositoriossa lisätty teksti 2105.
 Taas muutetaan.
+## harjoitusohjelmageneraattori
+- Työaikakirjanpito: https://github.com/rautajan/ot-harjoitustyo/blob/master/harjoitusohjelmageneraattori/dokumentaatio/ty%C3%B6aikakirjanpito.md
+- Vaatimusmäärittely: https://github.com/rautajan/ot-harjoitustyo/blob/master/harjoitusohjelmageneraattori/dokumentaatio/vaatimusmaarittely.md
