@@ -1,19 +1,19 @@
-#Vaatimusmäärittely
+**Vaatimusmäärittely**
 --
-##Sovelluksen tarkoitus
+**Sovelluksen tarkoitus**
 --
 Sovelluksen ideana on antaa käyttäjälle harjoitusohjelma kuntosalille
 käyttäjän antamien tietojen perusteella. 
 --
-##Käyttäjät
+**Käyttäjät**
 --
 Sovelluksella on aluksi vain yksi käyttäjärooli, eli normaalikäyttäjä.
 Myöhemmässä vaiheessa voidaan mahdollisesti lisätä myös ylläpitäjä, 
 jolla on laajemmat oikeudet.
 --
-##Perusversion tarjoama toiminnallisuus
+**Perusversion tarjoama toiminnallisuus**
 --
-###Ennen kirjautumista
+**Ennen kirjautumista**
 + Käyttäjä voi luoda oman käyttäjätunnuksen ja salasanan.
 	+ Käyttäjätunnuksen tulee olla uniikki ja vähintään neljä merkkiä
 	 pitkä.
@@ -24,7 +24,8 @@ jolla on laajemmat oikeudet.
 	+ Jos käyttäjätunnusta ei ole luotu ja käyttäjä yrittää kirjautua
 	kyseisellä tunnuksella, niin tästä ilmoitetaan myös virheviestillä.
 
-###Kirjautumisen jälkeen
+
+**Kirjautumisen jälkeen**
 + Käyttäjä näkee ensimmäisellä kerralla kirjautuessaan näkymän, jossa
 kysytään ikää, sukupuolta, harjoitustaustaa, kuinka paljon on mahdollisuus
 käyttää aikaa harjoitteluun viikossa sekä harjoittelun tavoitteita.
@@ -38,8 +39,9 @@ harjoitusohjelman.
 pohjalta sovellus ehdottaa käyttäjälle uutta ohjelmaa.
 + (Käyttäjä näkee vain oman harjoitusohjelmansa.) 
 + Käyttäjä voi kirjautua ulos.
-+ 
-##Jatkokehitysideoita
+
+
+**Jatkokehitysideoita**
 Sovellukseen tehdään mahdollisesti seuraavia laajennuksia, jos aikaa jää ja taidot
 riittävät.
 + Sovellusta käyttävien käyttäjien määrä/luotujen harjoitusohjelmien määrä.
@@ -52,7 +54,9 @@ reaaliaikainen seuranta).
 	 harjoitusohjelman muokkaamiseen käyttäjälle vielä sopivammaksi.
 + Ylläpitäjän lisäys
 --
-##Toimintaympäristön rajoitteet
+
+
+**Toimintaympäristön rajoitteet**
 + Sovelluksen tulee toimia Linux-käyttöjärjestelmällä varustetulla koneella.
 + Käyttäjien tiedot ja sovelluksen muut mahdolliset tiedot tallennetaan paikallisen
 koneen kovalevylle.  
