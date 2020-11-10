@@ -7,7 +7,7 @@ käyttäjän antamien tietojen perusteella.
 
 ## Käyttäjät
 
--Sovelluksella on aluksi vain yksi käyttäjärooli, eli normaalikäyttäjä.
+- Sovelluksella on aluksi vain yksi käyttäjärooli, eli normaalikäyttäjä.
 - Myöhemmässä vaiheessa voidaan mahdollisesti lisätä myös ylläpitäjä, 
 jolla on laajemmat oikeudet.
 
@@ -40,6 +40,8 @@ pohjalta sovellus ehdottaa käyttäjälle uutta ohjelmaa.
 - (Käyttäjä näkee vain oman harjoitusohjelmansa.) 
 - Käyttäjä voi kirjautua ulos.
 
+## Käyttöliittymä
+Sovelluksessa tulee olemaan graafinen käyttöliittymä.
 
 ## Jatkokehitysideoita
 
@@ -51,7 +53,7 @@ riittävät.
 ohjelma on koettu).
 - Tehtyjen harjoitusten ja niiden onnistumisen  merkitseminen sovellukseen(edistymisen
 reaaliaikainen seuranta).
-	+Tätä dataa voidaan mahdollisesti käyttää seuraavan viikon ja/tai seuraavan
+	 - Tätä dataa voidaan mahdollisesti käyttää seuraavan viikon ja/tai seuraavan
 	 harjoitusohjelman muokkaamiseen käyttäjälle vielä sopivammaksi.
 - Ylläpitäjän lisäys
 
