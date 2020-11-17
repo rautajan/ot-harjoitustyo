@@ -73,7 +73,13 @@ public class Main {
             }
 
         }
-        System.out.println("Kiitos ja hyviä treenihetkiä!");
+        System.out.println(Xtulostaja());
+//        System.out.println("Kiitos ja hyviä treenihetkiä!");
 
+    }
+    
+    public static String Xtulostaja() {
+        String tulostus = "Kiitos ja hyviä treenihetkiä!";
+        return tulostus;
     }
 }
