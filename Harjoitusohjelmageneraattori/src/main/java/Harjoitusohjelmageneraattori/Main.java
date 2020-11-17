@@ -3,7 +3,7 @@ package Harjoitusohjelmageneraattori;
 import java.io.File;
 import java.util.Scanner;
 
-public class Harjoitusohjelmageneraattori {
+public class Main {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
