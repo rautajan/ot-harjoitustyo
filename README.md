@@ -6,5 +6,5 @@ Käyttäjän syötettyä tiedot ensimmäisen kirjautumisen jälkeen sovellus ant
 
 
 # Dokumentaatio
-[Työaikakirjanpito](https://github.com/rautajan/ot-harjoitustyo/blob/master/harjoitusohjelmageneraattori/dokumentaatio/ty%C3%B6aikakirjanpito.md)
-[Vaatimusmäärittely](https://github.com/rautajan/ot-harjoitustyo/blob/master/harjoitusohjelmageneraattori/dokumentaatio/vaatimusmaarittely.md)
+[Työaikakirjanpito](https://github.com/rautajan/ot-harjoitustyo/blob/master/dokumentaatio/ty%C3%B6aikakirjanpito.md)
+[Vaatimusmäärittely](https://github.com/rautajan/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
