@@ -30,9 +30,9 @@ jolla on laajemmat oikeudet.
 kysytään ikää, sukupuolta, harjoitustaustaa, kuinka paljon on mahdollisuus
 käyttää aikaa harjoitteluun viikossa sekä harjoittelun tavoitteita.
 	- Kaikki yllämainitut kyselyt toteutetaan monivalintana 2-5 
-	vaihtoehdosta.
+	vaihtoehdosta. (tehty)
 - Käyttäjän syötettyä tiedot ensimmäisen kirjautumisen jälkeen sovellus 
-antaa käyttäjälle harjoitusohjelman syötettyjen tietojen perusteella.
+antaa käyttäjälle harjoitusohjelman syötettyjen tietojen perusteella. (tehty)
 - Seuraavilla kerroilla sovellukseen kirjautuessaan käyttäjä näkee käynnissä olevan
 harjoitusohjelman.
 - Ohjelman suoritettuaan käyttäjältä kysytään palautetta ohjelmasta ja tämän 
