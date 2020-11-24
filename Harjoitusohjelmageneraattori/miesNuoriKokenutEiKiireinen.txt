@@ -1,4 +1,5 @@
-Edistyneen ja ei niin kiireisen harjoitusohjelma
+Edistyneen ja ei niin kiireisen nuoren miehen harjoitusohjelma
+
 Maanantai
 - Lämmittely soutulaitteessa 15 min
 - Käsien heiluttelua, dynaamisia venytyksiä (n. 5 sekuntia/venytys) ja kuminauhalla lämmittelyä

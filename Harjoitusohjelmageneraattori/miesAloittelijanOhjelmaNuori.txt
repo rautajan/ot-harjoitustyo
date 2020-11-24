@@ -1,4 +1,5 @@
-Aloittelijan ohjelma
+Nuoren aloittelevan miehen harjoitusohjelma
+
 Maanantai
 - Lämmittely 10 min.soutulaitteella (Kevyt hengästyminen riittää)
 - Penkkipunnerrus: 3x12
