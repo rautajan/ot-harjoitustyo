@@ -20,6 +20,8 @@ Testien suoritus: "mvn test"
 Testikattavuusraportin luonti: "mvn jacoco: report"
 
 Checkstyle-tarkistus: "mvn jxr:jxr checkstyle:checkstyle"
+
+Jar-tiedoston generointi: "mvn package"
                            
 
                               
