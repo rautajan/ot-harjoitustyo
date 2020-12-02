@@ -2,6 +2,7 @@ package harjoitusohjelmageneraattori.ui;
 
 import javafx.application.Application;
 import harjoitusohjelmageneraattori.domain.Logic;
+import java.io.IOException;
 import java.util.Scanner;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -17,23 +18,18 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import javax.swing.text.html.CSS;
 
 public class Ui extends Application {
 
-    private Scanner reader;
     private Logic logic; // 
     private String answer;
     
-    public Ui() {
-        this.answer = "";
-    }
 
-//    public Ui(Scanner reader, Logic logic) {
-//        this.reader = reader;
-//        this.logic = logic;
-//    }
+
     public static void main(String[] args) {
         launch(Ui.class);
     }
@@ -43,121 +39,98 @@ public class Ui extends Application {
     }
 
     
-    public void welcome(Stage startingStage) {
+    public void welcome(Stage mainStage){
         String answer = "";
 //        BorderPane setting = new BorderPane();
         Label textcomponent = new Label("Tervetuloa harjoitusohjelmageneraattoriin! \n Tämän sovelluksen avulla voit luoda juuri "
                 + "sinun tarpeisiisi sopivan harjoitusohjelman.");
+        //textcomponent.setFont(Font.font(answer, FontWeight.THIN, 0));
         Button startButton = new Button("Aloita");
         Button exitButton = new Button("Lopeta");
-//        setting.setLeft(startButton);
-//        setting.setRight(exitButton);
-//        setting.setCenter(textcomponent);
-        GridPane setting = new GridPane();
-        setting.add(textcomponent, 0, 0);
-        setting.add(startButton, 0, 1);
-        setting.add(exitButton, 0, 2);
-
-        setting.setPrefSize(500, 400);
-        setting.setAlignment(Pos.CENTER);
-        setting.setVgap(10);
+        VBox layout = new VBox(20);
+        layout.setAlignment(Pos.TOP_CENTER);
+        layout.getChildren().addAll(textcomponent, startButton, exitButton);
         
-        Label askInfo = new Label("Vastaa alla oleviin kysymyksiin, niin osaan luoda sopivan ohjelman sinulle. \n "
-                + "Syötä parhaiten itseäsi kuvaavan vaihtoehdon kirjain tekstikenttään.\n");
-        Label questionOne = new Label("a) Olen aloittelija (Aktiivista harjoittelua takana alle 6kk) ja minulla on aikaa käydä salilla"
+        exitButton.setOnAction((e) -> {
+            mainStage.close();
+        });
+        startButton.setOnAction((e) -> {
+            userInfo(mainStage);
+        });
+        
+        
+        Scene welcomeView = new Scene(layout, 800, 600);
+        mainStage.setTitle("Tervetuloa");
+        mainStage.setScene(welcomeView);
+        mainStage.show();
+    }
+        
+    public void userInfo(Stage mainStage) {
+        Label infoText = new Label("Vastaa alla oleviin kysymyksiin,"
+                + " niin osaan luoda sopivan ohjelman sinulle.");
+        VBox rootAlignment = new VBox(20);
+        GridPane questions = new GridPane();
+        rootAlignment.setAlignment(Pos.TOP_CENTER);
+        questions.setPadding(new Insets(20));
+        questions.setAlignment(Pos.CENTER);
+        Label question1 = new Label("a) Olen aloittelija (Aktiivista harjoittelua takana alle 6kk) ja minulla on aikaa käydä salilla"
                     + " vähintään kolmena päivänä viikossa \n"
                 + "b) Olen kokenut harjoittelija (Aktiivista harjoittelua takana yli 6kk) ja minulla on aikaa käydä " 
                 +     "salilla neljänä päivänä viikossa \n"
                 + "c) Olen kokenut harjoittelija (Aktiivista harjoittelua takana yli 6kk) ja minulla on aikaa käydä " +
-                    "salilla viitenä päivänä viikossa \n");
-        TextField answerOne = new TextField();
-        Button answerOneButton = new Button("Tallenna vastaus");
+                    "salilla viitenä päivänä viikossa");
+        Label question2 = new Label("a) Olen mies \nb) Olen Nainen");
+        Label question3 = new Label("a) Olen 18-49 vuotias \nb) Olen 50-65 vuotias");
+        Label questionInfo1 = new Label("Kysymys 1");
+        Label questionInfo2 = new Label("Kysymys 2");
+        Label questionInfo3 = new Label("Kysymys 3");
+        questions.add(question1, 0, 1);
+        questions.add(question2, 0, 3);
+        questions.add(question3, 0, 5);
+        questions.add(questionInfo1, 0, 0);
+        questions.add(questionInfo2, 0, 2);
+        questions.add(questionInfo3, 0, 4);
         
-        Label questionTwo = new Label("a) Olen mies \nb) Olen Nainen");
-        TextField answerTwo = new TextField();
-        Button answerTwoButton = new Button("Tallenna vastaus");
-        Label questionThree = new Label("a) Olen 18-49 vuotias \nb) Olen 50-65 vuotias");
-        TextField answerThree = new TextField();
-        Button answerThreeButton = new Button("Tallenna vastaus");
+        Label answerInfo = new Label("Syötä vastauksesi alla olevaan tekstikenttään. Tyyliin: aaa (Aloitteleva 18-49 vuotias mies)");
+        TextField answer = new TextField();
+        Button answerButton = new Button("Näytä harjoitusohjelmani");
+        questions.add(answerInfo, 0, 6);
+        questions.add(answer, 0, 7);
+        rootAlignment.getChildren().addAll(infoText, questions, answerButton);
         
-        Button showProgramButton = new Button("Näytä ohjelmani");
-        
-        
-        
-        
-        GridPane askSetting = new GridPane();
-        VBox rootPane = new VBox(20);
-        rootPane.setAlignment(Pos.CENTER);
-        
-        askSetting.setPrefSize(600, 600);
-        askSetting.add(askInfo, 0, 0);
-        askSetting.add(questionOne, 0, 1);
-        askSetting.add(answerOne, 0, 2);
-        askSetting.add(answerOneButton, 0, 3);
-        askSetting.add(questionTwo, 0, 4);
-        askSetting.add(answerTwo, 0, 5);
-        askSetting.add(answerTwoButton, 0, 6);
-        askSetting.add(questionThree, 0, 7);
-        askSetting.add(answerThree, 0, 8);
-        askSetting.add(answerThreeButton, 0, 9);
-        askSetting.add(showProgramButton, 0, 10);
-        askSetting.setAlignment(Pos.TOP_CENTER);
-        Scene askView = new Scene(askSetting);
-        
-        FlowPane programLayout = new FlowPane();
-        String program = logic.readFile(this.answer);
-        Label showProgram = new Label(program);
-        programLayout.getChildren().add(showProgram);
-        
-        Scene programview = new Scene(programLayout);
-        
-        
-      
-        
-        exitButton.setOnAction((event) -> {
-            startingStage.close();
-        });
-        startButton.setOnAction((event) -> {
-            startingStage.setScene(askView);
-           
-        });
-        answerOneButton.setOnAction((event) -> {
-            saveAnswers(answerOne.getText());
+        answerButton.setOnMouseClicked((e) -> {
+            String programcode = answer.getText();
+            showProgram(mainStage, programcode);
+            
         });
         
-        answerTwoButton.setOnAction((event) -> {
-            saveAnswers(answerTwo.getText());
-        });
-        
-        answerThreeButton.setOnAction((event) -> {
-            saveAnswers(answerThree.getText());
-        });
-        showProgramButton.setOnAction((event) -> {
-            startingStage.setScene(programview);
-        });
-        
+        Scene userInfoScene = new Scene(rootAlignment, 800, 600);
+        mainStage.setScene(userInfoScene);
+        mainStage.setTitle("Kysely");
+    }
+    
+    public void showProgram(Stage mainStage, String answer) {
+        String fetchedProgram = logic.readFile(answer);
+        Label program = new Label(fetchedProgram);
+        program.setAlignment(Pos.TOP_CENTER);
         
         
+        
+        
+        Scene showProgramScene = new Scene(program, 800, 600);
+        mainStage.setScene(showProgramScene);
+        mainStage.setTitle("Harjoitusohjelma");
+        
+    }
+    
+    
 
-        Scene view = new Scene(setting);
-        //Scene askView = new Scene(askSetting);
-        startingStage.setTitle("Harjoitusohjelmageneraattori");
-        startingStage.setScene(view);
-        startingStage.show();
-    }
     
-    public void saveAnswers(String answer) {
-        this.answer += answer;
-        System.out.println(answer);
+    
+    @Override
+    public void stop() {
         
     }
-   
     
-    
-//    @Override
-//    public void stop() {
-//        
-//    }
-//    
 
 }

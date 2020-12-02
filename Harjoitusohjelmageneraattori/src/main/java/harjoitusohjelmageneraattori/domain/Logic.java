@@ -1,11 +1,11 @@
 
 package harjoitusohjelmageneraattori.domain;
 
+import harjoitusohjelmageneraattori.ui.Ui;
 import java.io.File;
 import java.util.Scanner;
 
 public class Logic {
-    
     
     public Logic() {
         
@@ -14,11 +14,12 @@ public class Logic {
     
     public String readFile(String file) {
         String program = "";
+        System.out.println("päästiin perille" + file);
         String programFile = file;
         if (file.equals("amv")) {
             programFile = "miesAloittelijaVanha.txt";
         }
-        if (file.equals("amn")) {
+        if (file.equals("aaa")) {
             programFile = "miesAloittelijanOhjelmaNuori.txt";
         }
         if (file.equals("cmn")) {
