@@ -41,7 +41,7 @@ pohjalta sovellus ehdottaa käyttäjälle uutta ohjelmaa.
 - Käyttäjä voi kirjautua ulos.
 
 ## Käyttöliittymä
-Sovelluksessa tulee olemaan graafinen käyttöliittymä.
+Sovelluksessa tulee olemaan graafinen käyttöliittymä. (tehty, mutta toiminta vielä puutteellista)
 
 ## Jatkokehitysideoita
 
