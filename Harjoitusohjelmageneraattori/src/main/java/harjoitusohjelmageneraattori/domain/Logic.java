@@ -1,4 +1,3 @@
-
 package harjoitusohjelmageneraattori.domain;
 
 import harjoitusohjelmageneraattori.ui.Ui;
@@ -6,12 +5,11 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Logic {
-    
+
     public Logic() {
-        
-        
+
     }
-    
+
     public String readFile(String file) {
         String program = "";
         System.out.println("päästiin perille" + file);
@@ -49,16 +47,16 @@ public class Logic {
         if (file.equals("bnv")) {
             programFile = "nainenVanhaKOkenutKiireinen.txt";
         }
-        
+
         try ( Scanner fileReader = new Scanner(new File(programFile), "UTF-8")) {
-                    while (fileReader.hasNextLine()) {
-                        program += (fileReader.nextLine()) + "\n";
-                    }
-                } catch (Exception e) {
-                    program = "Tiedoston luku ei onnistunut.";
-                }
+            while (fileReader.hasNextLine()) {
+                program += (fileReader.nextLine()) + "\n";
+        }
+            } catch (Exception e) {
+            program = "Tiedoston luku ei onnistunut.";
+        }
         return program;
-        
+
     }
-    
+
 }
