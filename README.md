@@ -22,6 +22,11 @@ Testikattavuusraportin luonti: "mvn jacoco: report"
 Checkstyle-tarkistus: "mvn jxr:jxr checkstyle:checkstyle"
 
 Jar-tiedoston generointi: "mvn package"
+
+## Releaset
+[Viikko 5](https://github.com/rautajan/ot-harjoitustyo/releases/tag/viikko5)
+
+- Ohjelma ei näytä vielä harjoitusohjelmaa kyselyjen jälkeen. En kerennyt ratkaisemaan kyseistä ongelmaa ennen viikon 5 deadlinea.
                            
 
                               
