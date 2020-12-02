@@ -40,7 +40,6 @@ public class Ui extends Application {
 
     
     public void welcome(Stage mainStage){
-        String answer = "";
 //        BorderPane setting = new BorderPane();
         Label textcomponent = new Label("Tervetuloa harjoitusohjelmageneraattoriin! \n Tämän sovelluksen avulla voit luoda juuri "
                 + "sinun tarpeisiisi sopivan harjoitusohjelman.");
