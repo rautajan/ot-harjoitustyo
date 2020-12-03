@@ -27,7 +27,7 @@ Jar-tiedoston generointi: "mvn package"
 [Viikko 5](https://github.com/rautajan/ot-harjoitustyo/releases/tag/viikko5)
 
 - Ohjelma ei näytä vielä harjoitusohjelmaa kyselyjen jälkeen. En kerennyt ratkaisemaan kyseistä ongelmaa ennen viikon 5 deadlinea.
-EDIT: Sain ohjelman lopulta toimimaan ja toimiva versio on pushattu GitHubiin deadlinen jälkeen. Release on edelleen alkuperäisessä ennen deadlinea saapuneessa muodossa.
+  - EDIT: Sain ohjelman lopulta toimimaan ja toimiva versio on pushattu GitHubiin deadlinen jälkeen. Release on edelleen alkuperäisessä ennen deadlinea saapuneessa muodossa.
                            
 
                               
