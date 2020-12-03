@@ -12,40 +12,39 @@ public class Logic {
 
     public String readFile(String file) {
         String program = "";
-        System.out.println("päästiin perille" + file);
         String programFile = file;
-        if (file.equals("amv")) {
+        if (file.equals("aab")) {
             programFile = "miesAloittelijaVanha.txt";
         }
         if (file.equals("aaa")) {
             programFile = "miesAloittelijanOhjelmaNuori.txt";
         }
-        if (file.equals("cmn")) {
+        if (file.equals("caa")) {
             programFile = "miesNuoriKokenutEiKiireinen.txt";
         }
-        if (file.equals("bmn")) {
+        if (file.equals("baa")) {
             programFile = "miesNuoriKokenutKiireinen.txt";
         }
-        if (file.equals("bmv")) {
+        if (file.equals("bab")) {
             programFile = "miesVanhaKokenutKiireinen.txt";
         }
-        if (file.equals("ann")) {
+        if (file.equals("aba")) {
             programFile = "nainenAloittelijaNuori.txt";
         }
-        if (file.equals("anv")) {
+        if (file.equals("abb")) {
             programFile = "nainenAloittelijaVanha.txt";
         }
-        if (file.equals("cnn")) {
+        if (file.equals("cba")) {
             programFile = "nainenNuoriKokenutEiKiireinen.txt";
         }
-        if (file.equals("bnn")) {
+        if (file.equals("bba")) {
             programFile = "nainenNuoriKokenutKiireinen.txt";
         }
-        if (file.equals("cnv")) {
-            programFile = "nainenVanhaKokenutEiKiireinen.txt";
+        if (file.equals("cbb")) {
+            programFile = "nainenVanhaKokenutEikiireinen.txt";
         }
-        if (file.equals("bnv")) {
-            programFile = "nainenVanhaKOkenutKiireinen.txt";
+        if (file.equals("bbb")) {
+            programFile = "nainenVanhaKokenutKiireinen.txt";
         }
 
         try ( Scanner fileReader = new Scanner(new File(programFile), "UTF-8")) {

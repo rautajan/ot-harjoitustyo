@@ -1,5 +1,4 @@
 Edistyneen ja ei niin kiireisen nuoren miehen harjoitusohjelma
-
 Maanantai
 - Lämmittely soutulaitteessa 15 min
 - Käsien heiluttelua, dynaamisia venytyksiä (n. 5 sekuntia/venytys) ja kuminauhalla lämmittelyä
@@ -60,7 +59,6 @@ Lauantai
 - Vipunostot maaten 5x12 + alatalja leveällä otteella 5x12 (vuorosarjat, minuutin palautukset)
 - Hauiskääntö käsipainoilla 5x12 + ranskalainen punnerrus käsipainoilla 5x12 (vuorosarjat minuutin palautukset)
 - Hauiskääntö käsipainoilla vinopenkissä todella puhtaalla tekniikalla 5x12 + ojentaja taljassa 5x12 (vuorosarjat minuutin palautukset)
-
 
 Sunnuntai
 - Lepopäivä

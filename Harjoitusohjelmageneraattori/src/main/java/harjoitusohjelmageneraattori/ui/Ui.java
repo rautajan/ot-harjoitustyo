@@ -28,7 +28,9 @@ public class Ui extends Application {
     private Logic logic; // 
     private String answer;
     
-
+    public Ui() {
+        this.logic = new Logic();
+    }
 
     public static void main(String[] args) {
         launch(Ui.class);
@@ -99,6 +101,7 @@ public class Ui extends Application {
         
         answerButton.setOnMouseClicked((e) -> {
             String programcode = answer.getText();
+            System.out.println(programcode);
             showProgram(mainStage, programcode);
             
         });
@@ -116,7 +119,7 @@ public class Ui extends Application {
         
         
         
-        Scene showProgramScene = new Scene(program, 800, 600);
+        Scene showProgramScene = new Scene(program, 1000, 1100);
         mainStage.setScene(showProgramScene);
         mainStage.setTitle("Harjoitusohjelma");
         
