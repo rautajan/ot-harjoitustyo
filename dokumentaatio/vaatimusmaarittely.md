@@ -19,34 +19,26 @@ jolla on laajemmat oikeudet.
 	 pitkä.
 	- Salasanan tulee olla vähintään viisi merkkiä pitkä.
 - Käyttäjä voi kirjautua sovellukseen, jos hän on jo luonut tunnukset.	
-	- Jos käyttäjä syöttää salasanan tai käyttäjätunnuksen väärin, 
-	niin sovellus ilmoittaa tästä virheviestillä.
-	- Jos käyttäjätunnusta ei ole luotu ja käyttäjä yrittää kirjautua
-	kyseisellä tunnuksella, niin tästä ilmoitetaan myös virheviestillä.
+	- Jos käyttäjä syöttää salasanan tai käyttäjätunnuksen väärin tai käyttäjätunnusta ei ole, 
+	niin sovellus ilmoittaa tästä yhdellä virheviestillä.
 
 
 ### Kirjautumisen jälkeen
 - Käyttäjä näkee ensimmäisellä kerralla kirjautuessaan näkymän, jossa
 kysytään ikää, sukupuolta, harjoitustaustaa, kuinka paljon on mahdollisuus
-käyttää aikaa harjoitteluun viikossa sekä harjoittelun tavoitteita.
-	- Kaikki yllämainitut kyselyt toteutetaan monivalintana 2-5 
-	vaihtoehdosta. (tehty)
+käyttää aikaa harjoitteluun viikossa.
+	- Kaikki yllämainitut kyselyt toteutetaan monivalintana 2-3 
+	vaihtoehdosta.
 - Käyttäjän syötettyä tiedot ensimmäisen kirjautumisen jälkeen sovellus 
-antaa käyttäjälle harjoitusohjelman syötettyjen tietojen perusteella. (tehty)
-- Seuraavilla kerroilla sovellukseen kirjautuessaan käyttäjä näkee käynnissä olevan
+antaa käyttäjälle harjoitusohjelman syötettyjen tietojen perusteella.
+- Seuraavilla kerroilla sovellukseen kirjautuessaan käyttäjä näkee alunperin ensimmäisellä kirjautumiskerralla sovelluksen valitseman
 harjoitusohjelman.
-- Ohjelman suoritettuaan käyttäjältä kysytään palautetta ohjelmasta ja tämän 
-pohjalta sovellus ehdottaa käyttäjälle uutta ohjelmaa.
-- (Käyttäjä näkee vain oman harjoitusohjelmansa.) 
-- Käyttäjä voi kirjautua ulos.
 
 ## Käyttöliittymä
-Sovelluksessa tulee olemaan graafinen käyttöliittymä. (tehty, mutta toiminta vielä puutteellista)
+Sovelluksessa tulee olemaan graafinen käyttöliittymä.
 
 ## Jatkokehitysideoita
 
-Sovellukseen tehdään mahdollisesti seuraavia laajennuksia, jos aikaa jää ja taidot
-riittävät. 
 - Sovellusta käyttävien käyttäjien määrä/luotujen harjoitusohjelmien määrä.
 -  Kaikkien käyttäjien suoritetut harjoitusohjelmat(lukumäärä).
 - Palaute harjoitusohjelmista vastaavilta käyttäjiltä(kuinka sopivaksi kyseinen
@@ -56,6 +48,8 @@ reaaliaikainen seuranta).
 	 - Tätä dataa voidaan mahdollisesti käyttää seuraavan viikon ja/tai seuraavan
 	 harjoitusohjelman muokkaamiseen käyttäjälle vielä sopivammaksi.
 - Ylläpitäjän lisäys
+- Ohjelman suoritettuaan käyttäjältä kysytään palautetta ohjelmasta ja tämän 
+pohjalta sovellus ehdottaa käyttäjälle uutta ohjelmaa.
 
 
 
