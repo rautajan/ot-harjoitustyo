@@ -1,3 +1,4 @@
+
 package harjoitusohjelmageneraattori.ui;
 
 import javafx.application.Application;
@@ -36,10 +37,8 @@ public class Ui extends Application {
     }
 
     public void welcome(Stage mainStage) throws Exception {
-//        BorderPane setting = new BorderPane();
         Label textcomponent = new Label("Tervetuloa harjoitusohjelmageneraattoriin! \n Tämän sovelluksen avulla voit luoda juuri "
                 + "sinun tarpeisiisi sopivan harjoitusohjelman.");
-        //textcomponent.setFont(Font.font(answer, FontWeight.THIN, 0));
         Button logInButton = new Button("Näytä ohjelmani");
         Button createUserButton = new Button("Olen uusi käyttäjä");
 
@@ -154,8 +153,6 @@ public class Ui extends Application {
         questions.add(questionInfo2, 0, 4);
         questions.add(questionInfo3, 0, 7);
 
-        Label answerInfo = new Label("Syötä vastauksesi alla olevaan tekstikenttään. Tyyliin: aaa (Aloitteleva 18-49 vuotias mies)");
-        TextField answer = new TextField();
         Button answerButton = new Button("Näytä harjoitusohjelmani");
         rootAlignment.getChildren().addAll(infoText, questions, answerButton);
 

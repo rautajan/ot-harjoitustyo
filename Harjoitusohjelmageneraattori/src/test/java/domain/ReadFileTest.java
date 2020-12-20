@@ -11,11 +11,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
-public class ReaFileTest {
+public class ReadFileTest {
     private ReadFile readFile;
     private User user;
     
-    public ReaFileTest() {
+    public ReadFileTest() {
         this.readFile = new ReadFile();
     }
     
