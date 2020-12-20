@@ -1,7 +1,6 @@
 
 package harjoitusohjelmageneraattori.domain;
 
-import java.util.List;
 
 public class User {
     private String username;
@@ -27,10 +26,6 @@ public class User {
         return writeFile.saveUser(username, password, programName);
     }
     
-    
-    
-    //kirjoittaa käyttäjälle kuuluvan ohjelman tiedostoon
-    
-    
+
     
 }

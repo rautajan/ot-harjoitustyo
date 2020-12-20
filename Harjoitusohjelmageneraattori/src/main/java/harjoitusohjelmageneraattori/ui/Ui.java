@@ -1,14 +1,8 @@
 package harjoitusohjelmageneraattori.ui;
 
-
 import javafx.application.Application;
 import harjoitusohjelmageneraattori.domain.User;
 import harjoitusohjelmageneraattori.domain.ReadFile;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Properties;
-import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.geometry.Insets;
@@ -19,19 +13,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
-import javax.swing.text.html.CSS;
 
 public class Ui extends Application {
 
@@ -102,10 +86,11 @@ public class Ui extends Application {
 
         logInButton.setOnAction((e) -> {
             String message = readFile.logIn(userText.getText(), passwordText.getText());
-            if(message.equals("Onnistui")) {
+            if (message.length() > 100) {
+
                 showProgram(mainStage, message);
             }
-            userInfo(mainStage);// HAE KIRJAUTUNEEN KÄYTTÄJÄN OHJELMA;
+            errorMessage.setText(message);
         });
 
         backButton.setOnAction((e) -> {
@@ -172,8 +157,6 @@ public class Ui extends Application {
         Label answerInfo = new Label("Syötä vastauksesi alla olevaan tekstikenttään. Tyyliin: aaa (Aloitteleva 18-49 vuotias mies)");
         TextField answer = new TextField();
         Button answerButton = new Button("Näytä harjoitusohjelmani");
-        //questions.add(answerInfo, 0, 6);
-        //questions.add(answer, 0, 7);
         rootAlignment.getChildren().addAll(infoText, questions, answerButton);
 
         answerButton.setOnMouseClicked((e) -> {
@@ -205,26 +188,24 @@ public class Ui extends Application {
             if (answer3.getText().equals("Olen 50-65 vuotias")) {
                 choice += "b";
             }
-            System.out.println("Valinta" + choice);
-            
+
             String program = readFile.readProgramFile(choice);
-            
-                if (!(program.equals("Tiedoston luku ei onnistunut."))) {             
-                    String userSaved = user.setProgram(choice);  //virheilmoitus jonnekin
-                    showProgram(mainStage, program);
-                }
+
+            if (!(program.equals("Tiedoston luku ei onnistunut."))) {
+                String userSaved = user.setProgram(choice);
+                showProgram(mainStage, program);
             }
-            );
-            
-            Scene userInfoScene = new Scene(rootAlignment, 800, 600);
-            mainStage.setScene(userInfoScene);
-            mainStage.setTitle("Kysely");
-        
+        }
+        );
+
+        Scene userInfoScene = new Scene(rootAlignment, 800, 600);
+        mainStage.setScene(userInfoScene);
+        mainStage.setTitle("Kysely");
+
     }
 
     public void showProgram(Stage mainStage, String answer) {
-        String fetchedProgram = readFile.readProgramFile(answer);
-        Label program = new Label(fetchedProgram);
+        Label program = new Label(answer);
         program.setAlignment(Pos.TOP_CENTER);
 
         Scene showProgramScene = new Scene(program, 1000, 1100);

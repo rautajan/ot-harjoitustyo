@@ -12,7 +12,6 @@ public class WriteFile {
     }
 
     public String saveUser(String username, String password, String programname){
-        System.out.println("WriteFile");
         try ( FileWriter writer = new FileWriter("users.txt", true)) {
             writer.write(username + ";" + password + ";" + programname + "\n");
 

@@ -5,14 +5,16 @@ import java.io.File;
 import java.util.Scanner;
 
 public class ReadFile {
+
     private Ui Ui;
     private User user;
 
     public String readUsersFile(String name, String password) {
-        if(name.length()<4) {
+        Boolean used = false;
+        if (name.length() < 4) {
             return "Käyttäjätunnuksen tulee olla vähintään 4 merkkiä pitkä";
         }
-        if(password.length()<5) {
+        if (password.length() < 5) {
             return "Salasanan tulee olla vähintään 5 merkkiä pitkä";
         }
 
@@ -20,8 +22,12 @@ public class ReadFile {
             while (fileReader.hasNextLine()) {
                 String[] parts = fileReader.nextLine().split(";");
                 if (parts[0].equals(name)) {
-                    return "Käyttäjätunnus on jo käytössä";
+                    used = true;
                 }
+
+            }
+            if (used) {
+                return "Käyttäjätunnus on jo käytössä";
             }
         } catch (Exception e) {
             return "Tiedoston luku ei onnistunut.";
@@ -29,28 +35,23 @@ public class ReadFile {
         return "ok";
 
     }
-    
+
     public String logIn(String name, String password) {
         try ( Scanner fileReader = new Scanner(new File("users.txt"), "UTF-8")) {
             while (fileReader.hasNextLine()) {
                 String[] parts = fileReader.nextLine().split(";");
                 if (parts[0].equals(name) && parts[1].equals(password)) {
-                    return "Onnistui";
+                    return readProgramFile(parts[2]);
                 }
-                else {
-                    return "Käyttäjätunnus tai salasana on väärin";
-                }
+
             }
+            return "Käyttäjätunnus tai salasana on väärin";
         } catch (Exception e) {
             return "Tiedoston luku ei onnistunut.";
         }
-        return "Jokin meni vikaan";
     }
-    
-    
-    
-     public String readProgramFile(String file) {
-        System.out.println("Päästiin perille");
+
+    public String readProgramFile(String file) {
         String program = "";
         String programFile = file;
         if (file.equals("aab")) {
@@ -86,14 +87,14 @@ public class ReadFile {
         if (file.equals("bbb")) {
             programFile = "nainenVanhaKokenutKiireinen.txt";
         }
-
         try ( Scanner fileReader = new Scanner(new File(programFile), "UTF-8")) {
             while (fileReader.hasNextLine()) {
                 program += (fileReader.nextLine()) + "\n";
-        }
-            } catch (Exception e) {
+            }
+        } catch (Exception e) {
             program = "Tiedoston luku ei onnistunut.";
         }
+
         return program;
 
     }
